@@ -1,5 +1,6 @@
 import math
 def problem9():
+	#Only need to iterate through a and b as c can be derived
 	a = 0 
 	b = 0
 	for a in range(1, 1000):
