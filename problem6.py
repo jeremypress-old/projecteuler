@@ -1,5 +1,5 @@
-def problem6(x):
-	return squareOfSums(x) - sumOfSquares(x)
+def problem6():
+	return squareOfSums(100) - sumOfSquares(100)
 
 def squareOfSums(x):
 	count = sum(range(x + 1))

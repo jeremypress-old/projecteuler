@@ -1,24 +1,10 @@
+import EulerTools
 import math
-def problem3(original):
-	count = int(x**0.5) #start at the square root, have to check both factors of the numbers 
-	while count > 0:
-		otherFactor = int(original / x)
-		if orig % x == 0:
-			if isPrime(x):
-				return x
-		elif orig % otherFactor == 0: #checking the other potential factor
-			if isPrime(otherFactor) == 0:
-				return x
-		x -= 1
-
-def isPrime(x):
-	if x % 2 == 0:
-		return False
-	counter = 3
-	while counter <= x - 1:
-		if x % counter == 0:
-			return False
-		counter += 2
-	return True
-
-print problem3(600851475143)
+def problem3():
+	counter = int(math.sqrt(600851475143))
+	while counter > 0:
+		print(counter)
+		if 600851475143 % counter == 0:
+			if EulerTools.isPrime(counter):
+				return counter
+		counter -= 1
