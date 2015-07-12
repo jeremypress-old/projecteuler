@@ -23,6 +23,15 @@ def isPalindrone(x):
 			return False
 	return True
 
+def numberOfFactors(x):
+	counter = 0
+	for i in range(1, int(math.sqrt(x)) + 1):
+		if (x % i == 0):
+			counter += 2
+	if (math.sqrt(x) == int(math.sqrt(x))):
+		counter -= 1
+	return counter
+
 def stringToArray(strIn, rows, columns):
 	strIn = strIn.split(" ")
 	finalArray = []
