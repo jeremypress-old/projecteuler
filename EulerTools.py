@@ -22,3 +22,14 @@ def isPalindrone(x):
 		if number[index] != number[-(index + 1)]:
 			return False
 	return True
+
+def stringToArray(strIn, rows, columns):
+	strIn = strIn.split(" ")
+	finalArray = []
+	for y in range(rows):
+		rowArray = []
+		for x in range(columns):
+			currentItem = int(strIn[x + y * columns])
+			rowArray.append(currentItem)
+		finalArray.append(rowArray)
+	return finalArray
