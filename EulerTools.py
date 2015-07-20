@@ -42,3 +42,10 @@ def stringToArray(strIn, rows, columns):
 			rowArray.append(currentItem)
 		finalArray.append(rowArray)
 	return finalArray
+
+def sumOfDigits(number):
+	arrayOfDigits = list(str(number))
+	total = 0
+	for item in arrayOfDigits:
+		total += int(item)
+	return total
