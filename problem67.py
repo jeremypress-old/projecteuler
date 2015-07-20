@@ -1,6 +1,6 @@
 values = {}
 pyramid = []
-f = open('triangle.txt', 'r')
+f = open('files/triangle.txt', 'r')
 for line in f:
 	row = list(line.split(' '))
 	for i in range(len(row)):

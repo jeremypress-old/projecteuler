@@ -1,6 +1,6 @@
 import string
 score = dict(zip(string.ascii_lowercase, range(1, 27)))
-f = open('names.txt', 'r')
+f = open('files/names.txt', 'r')
 names = f.read().split(",")
 for i in range(len(names)):
 	names[i] = names[i].strip('"').lower()
