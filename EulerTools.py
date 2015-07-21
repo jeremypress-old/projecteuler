@@ -49,3 +49,10 @@ def sumOfDigits(number):
 	for item in arrayOfDigits:
 		total += int(item)
 	return total
+
+def sumDivisors(x):
+	total = 0
+	for i in range(1, x):
+		if x % i == 0:
+			total += i
+	return total
