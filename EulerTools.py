@@ -56,3 +56,15 @@ def sumDivisors(x):
 		if x % i == 0:
 			total += i
 	return total
+
+def fibGenerator():
+	yield 0
+	yield 1
+	curr = 0
+	next = 1
+	while True:
+		yield curr + next
+		temp = next
+		next += curr
+		curr = temp
+
